@@ -47,6 +47,7 @@ pub enum RegistryError {
 pub struct Config {
     pub admin: Address,
     pub max_claims_per_unit: u32,
+    pub paused: bool,
 }
 
 #[contracttype]

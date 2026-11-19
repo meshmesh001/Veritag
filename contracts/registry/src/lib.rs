@@ -41,6 +41,7 @@ impl VeritagRegistry {
         let config = Config {
             admin,
             max_claims_per_unit: DEFAULT_MAX_CLAIMS_PER_UNIT,
+            paused: false,
         };
         storage::set_config(&env, &config);
         Ok(())
